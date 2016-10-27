@@ -10,19 +10,6 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>02695368D18B14EE256AF90E8C1F45F0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>12B120DCA7B7EB2E625525CAF38F4173</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AppFrameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>02E7408B49F26A3887CCCB6B0AC47C1E</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -63,12 +50,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0774C5EA9800BEEC4055E27F5821B114</key>
+		<key>09CEFFA5FB88492898D8B6CA0657143D</key>
 		<dict>
-			<key>fileRef</key>
-			<string>6E06A45C1DBB94898A5909159900762A</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>824E6979144E5F61BECA017DBD207CB1</string>
+				<string>2327DDAE67A59E2B98DA62F0D0D17545</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>0A7870C59D6D1BC3E3A0506CF4865133</key>
 		<dict>
@@ -91,35 +85,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0E585877130642B18622BFF88B4360FC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2137730CE1BF5493601245A3DF2F35D3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>12B120DCA7B7EB2E625525CAF38F4173</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AFC9CBD08FE9DC781BEC31C01A8DABD3</string>
-				<string>B4C7FA75634102D4E5B67DF330C434F6</string>
-				<string>31F2D109D4A7988AC874AACF85516641</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Foundation</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>18340F12838DEE43507667CC74401EB1</key>
 		<dict>
 			<key>children</key>
@@ -134,35 +99,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1EE5C3D573D9507941632F648A2D6268</key>
+		<key>2327DDAE67A59E2B98DA62F0D0D17545</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>814E9EFAC71704656752043B66DE1C02</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>YJNSSingletonMCenter.h</string>
-			<key>path</key>
-			<string>Cocoa/AppFrameworks/Foundation/Singleton/YJNSSingletonMCenter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2137730CE1BF5493601245A3DF2F35D3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>YJNSFoundationOther.h</string>
-			<key>path</key>
-			<string>Cocoa/AppFrameworks/Foundation/Other/YJNSFoundationOther.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>24AF71972746227DCCFB5B01096A90BC</key>
 		<dict>
@@ -177,12 +126,34 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>275C39157583BEC510D58D20349AF0FC</key>
+		<key>24CAC3B5F7C2F9CFA09BF0902F8FCF31</key>
 		<dict>
-			<key>fileRef</key>
-			<string>FCC84A7E3C85530E5FF7A485E764CC78</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B996D22649CBD10C20ED1398B6C92833</string>
+				<string>90A6F09C44AAEC601B63C84012664237</string>
+				<string>53CE13F1BB9D27E279AC04FD6F5C9F8D</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2BC06E78DE1D4C25C5CE8CC98139DABE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>814E9EFAC71704656752043B66DE1C02</string>
+				<string>EAF2A61CA43A0839D2C14F9C67F48E9B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Singleton</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -198,24 +169,17 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>31A03886D432CC3EB305C210A3BA84E2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DA1E188FD979C574615B3D8D2A3178D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>31F2D109D4A7988AC874AACF85516641</key>
+		<key>332E912D85690B2626036561CC8EC18A</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>1EE5C3D573D9507941632F648A2D6268</string>
-				<string>FCC84A7E3C85530E5FF7A485E764CC78</string>
+				<string>43815E27634DCFD41983F6790ED488D9</string>
+				<string>2BC06E78DE1D4C25C5CE8CC98139DABE</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Singleton</string>
+			<string>Foundation</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -253,35 +217,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>3661B7372BEDF6D654B5F73C0CF63751</key>
-		<dict>
-			<key>fileRef</key>
-			<string>36E7A1C9F1A6FB264DA4B48D296FEF84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>36E7A1C9F1A6FB264DA4B48D296FEF84</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>YJNSDirectory.h</string>
-			<key>path</key>
-			<string>Cocoa/AppFrameworks/Foundation/Directory/YJNSDirectory.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>433CD3331B6C3787F473C941B61FC68F</key>
 		<dict>
 			<key>children</key>
@@ -292,6 +227,20 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>43815E27634DCFD41983F6790ED488D9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>779B1153DC7658F40B5EFEFFC9ED1477</string>
+				<string>B31BB9A1093F65EC09646FB524F84E5C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Other</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -322,6 +271,13 @@
 			<string>libYJCocoa.a</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>53CE13F1BB9D27E279AC04FD6F5C9F8D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EAF2A61CA43A0839D2C14F9C67F48E9B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>57031E6E62CF2B853CD480091105058A</key>
 		<dict>
@@ -356,21 +312,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
-		</dict>
-		<key>5A62B090D599CA170596EF4F0AB082EE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3661B7372BEDF6D654B5F73C0CF63751</string>
-				<string>0E585877130642B18622BFF88B4360FC</string>
-				<string>963C082F8DA9407F9A20A1EA1276CD59</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>6A80C1B4592DA8A93D1802D341B3911F</key>
 		<dict>
@@ -457,12 +398,20 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>7B79617BF0989A2D7E29A1770867B326</key>
+		<key>779B1153DC7658F40B5EFEFFC9ED1477</key>
 		<dict>
-			<key>fileRef</key>
-			<string>94D98D7E4C7A4A2AA28DCA467B13E3C4</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YJNSFoundationOther.h</string>
+			<key>path</key>
+			<string>Cocoa/AppFrameworks/Foundation/Other/YJNSFoundationOther.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
@@ -478,6 +427,35 @@
 			<string>PBXGroup</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>814E9EFAC71704656752043B66DE1C02</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YJNSSingletonMCenter.h</string>
+			<key>path</key>
+			<string>Cocoa/AppFrameworks/Foundation/Singleton/YJNSSingletonMCenter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>824E6979144E5F61BECA017DBD207CB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>779B1153DC7658F40B5EFEFFC9ED1477</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>88CD814C9EC30A8B1B55156285C31381</key>
 		<dict>
@@ -518,57 +496,19 @@
 			<key>targetProxy</key>
 			<string>8C80B743B4933201E0E52B13F0023AB8</string>
 		</dict>
+		<key>90A6F09C44AAEC601B63C84012664237</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B31BB9A1093F65EC09646FB524F84E5C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>91EEAEC145A597E1549CA7EC08C88577</key>
 		<dict>
 			<key>fileRef</key>
 			<string>D5298170A3B1AAAA9548031DB11FFA56</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>94D98D7E4C7A4A2AA28DCA467B13E3C4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>YJNSDirectory.m</string>
-			<key>path</key>
-			<string>Cocoa/AppFrameworks/Foundation/Directory/YJNSDirectory.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>963C082F8DA9407F9A20A1EA1276CD59</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1EE5C3D573D9507941632F648A2D6268</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>971610811E532635329162B84E3C7395</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0774C5EA9800BEEC4055E27F5821B114</string>
-				<string>7B79617BF0989A2D7E29A1770867B326</string>
-				<string>31A03886D432CC3EB305C210A3BA84E2</string>
-				<string>275C39157583BEC510D58D20349AF0FC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>9C35DEE94E33FFAF4FDD23E3917F48E7</key>
 		<dict>
@@ -694,7 +634,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>02695368D18B14EE256AF90E8C1F45F0</string>
+				<string>BC0144DB1F62A33C3372FC74C1305922</string>
 				<string>C79111672C1FF50F89E60E65D66ED651</string>
 			</array>
 			<key>isa</key>
@@ -713,31 +653,18 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>AFC9CBD08FE9DC781BEC31C01A8DABD3</key>
+		<key>B31BB9A1093F65EC09646FB524F84E5C</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>36E7A1C9F1A6FB264DA4B48D296FEF84</string>
-				<string>94D98D7E4C7A4A2AA28DCA467B13E3C4</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>Directory</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4C7FA75634102D4E5B67DF330C434F6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2137730CE1BF5493601245A3DF2F35D3</string>
-				<string>DA1E188FD979C574615B3D8D2A3178D5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Other</string>
+			<string>YJNSFoundationOther.m</string>
+			<key>path</key>
+			<string>Cocoa/AppFrameworks/Foundation/Other/YJNSFoundationOther.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -747,9 +674,9 @@
 			<string>CDD5F35D60F98419FD83814D6AE49858</string>
 			<key>buildPhases</key>
 			<array>
-				<string>971610811E532635329162B84E3C7395</string>
+				<string>24CAC3B5F7C2F9CFA09BF0902F8FCF31</string>
 				<string>04574B52D47769499BF554FCECB9B6C7</string>
-				<string>5A62B090D599CA170596EF4F0AB082EE</string>
+				<string>09CEFFA5FB88492898D8B6CA0657143D</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -773,6 +700,13 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>B996D22649CBD10C20ED1398B6C92833</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6E06A45C1DBB94898A5909159900762A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -789,6 +723,19 @@
 			<string>SOURCE_ROOT</string>
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BC0144DB1F62A33C3372FC74C1305922</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>332E912D85690B2626036561CC8EC18A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AppFrameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C3B7BDF5CE5CB8F095FE12DA55D9A9BB</key>
 		<dict>
@@ -912,21 +859,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>DA1E188FD979C574615B3D8D2A3178D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>YJNSFoundationOther.m</string>
-			<key>path</key>
-			<string>Cocoa/AppFrameworks/Foundation/Other/YJNSFoundationOther.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>E7BF922D00917631EAD1E72850D92A56</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -937,6 +869,21 @@
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Pods-YJCoreData.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EAF2A61CA43A0839D2C14F9C67F48E9B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YJNSSingletonMCenter.m</string>
+			<key>path</key>
+			<string>Cocoa/AppFrameworks/Foundation/Singleton/YJNSSingletonMCenter.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1091,21 +1038,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
-		</dict>
-		<key>FCC84A7E3C85530E5FF7A485E764CC78</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>YJNSSingletonMCenter.m</string>
-			<key>path</key>
-			<string>Cocoa/AppFrameworks/Foundation/Singleton/YJNSSingletonMCenter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

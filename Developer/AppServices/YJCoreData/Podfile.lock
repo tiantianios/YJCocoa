@@ -1,12 +1,9 @@
 PODS:
-  - YJCocoa/AppFrameworks/Foundation/Directory (4.2.1):
-    - YJCocoa/AppFrameworks/Foundation/Singleton
   - YJCocoa/AppFrameworks/Foundation/Other (4.2.1)
   - YJCocoa/AppFrameworks/Foundation/Singleton (4.2.1):
     - YJCocoa/AppFrameworks/Foundation/Other
 
 DEPENDENCIES:
-  - YJCocoa/AppFrameworks/Foundation/Directory
   - YJCocoa/AppFrameworks/Foundation/Other
   - YJCocoa/AppFrameworks/Foundation/Singleton
 
