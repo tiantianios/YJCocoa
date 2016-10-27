@@ -1,0 +1,10 @@
+PODS:
+  - YJCocoa/AppFrameworks/Foundation/Other (4.2.1)
+
+DEPENDENCIES:
+  - YJCocoa/AppFrameworks/Foundation/Other
+
+SPEC CHECKSUMS:
+  YJCocoa: be076c30cb7f1217fe60a1c141de59ec53b58201
+
+COCOAPODS: 0.39.0
