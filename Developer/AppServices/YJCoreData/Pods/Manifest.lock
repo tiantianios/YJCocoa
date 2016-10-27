@@ -1,13 +1,18 @@
 PODS:
-  - YJCocoa/AppFrameworks/Foundation/Other (4.2.1)
-  - YJCocoa/AppFrameworks/Foundation/Singleton (4.2.1):
+  - YJCocoa/AppFrameworks/Foundation/Directory (4.3.0):
+    - YJCocoa/AppFrameworks/Foundation/Singleton
+  - YJCocoa/AppFrameworks/Foundation/FileManager (4.3.0)
+  - YJCocoa/AppFrameworks/Foundation/Other (4.3.0)
+  - YJCocoa/AppFrameworks/Foundation/Singleton (4.3.0):
     - YJCocoa/AppFrameworks/Foundation/Other
 
 DEPENDENCIES:
+  - YJCocoa/AppFrameworks/Foundation/Directory
+  - YJCocoa/AppFrameworks/Foundation/FileManager
   - YJCocoa/AppFrameworks/Foundation/Other
   - YJCocoa/AppFrameworks/Foundation/Singleton
 
 SPEC CHECKSUMS:
-  YJCocoa: be076c30cb7f1217fe60a1c141de59ec53b58201
+  YJCocoa: 35f0e0a3cfff01a456c1fdc6141c5cf19dfc0dbe
 
 COCOAPODS: 0.39.0
