@@ -3,15 +3,22 @@ PODS:
     - YJCocoa/AppFrameworks/Foundation/Singleton
   - YJCocoa/AppFrameworks/Foundation/FileManager (4.3.0)
   - YJCocoa/AppFrameworks/Foundation/Other (4.3.0)
+  - YJCocoa/AppFrameworks/Foundation/PerformSelector (4.3.0)
   - YJCocoa/AppFrameworks/Foundation/Singleton (4.3.0):
     - YJCocoa/AppFrameworks/Foundation/Other
+  - YJCocoa/AppFrameworks/Foundation/Timer (4.3.0):
+    - YJCocoa/AppFrameworks/Foundation/PerformSelector
+    - YJCocoa/AppFrameworks/Foundation/Singleton
+    - YJCocoa/System/Security/Random
   - YJCocoa/System/Dispatch (4.3.0)
+  - YJCocoa/System/Security/Random (4.3.0)
 
 DEPENDENCIES:
   - YJCocoa/AppFrameworks/Foundation/Directory
   - YJCocoa/AppFrameworks/Foundation/FileManager
   - YJCocoa/AppFrameworks/Foundation/Other
   - YJCocoa/AppFrameworks/Foundation/Singleton
+  - YJCocoa/AppFrameworks/Foundation/Timer
   - YJCocoa/System/Dispatch
 
 SPEC CHECKSUMS:
