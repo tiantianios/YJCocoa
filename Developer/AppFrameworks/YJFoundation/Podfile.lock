@@ -1,12 +1,12 @@
 PODS:
-  - YJCocoa/System/Dispatch (4.3.1)
-  - YJCocoa/System/Security/Random (4.3.1)
+  - YJCocoa/System/Dispatch (5.0.0)
+  - YJCocoa/System/Security/Random (5.0.0)
 
 DEPENDENCIES:
   - YJCocoa/System/Dispatch
   - YJCocoa/System/Security/Random
 
 SPEC CHECKSUMS:
-  YJCocoa: a4472c2839b8dcdd92dacaf5dcbb1d577b3f52f9
+  YJCocoa: 807b191d68f409fbfa5e0e23d5cd1fcad99d3c38
 
 COCOAPODS: 0.39.0
