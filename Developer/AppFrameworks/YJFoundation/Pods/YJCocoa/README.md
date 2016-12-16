@@ -1,6 +1,5 @@
 ![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2016110201.png)
 
-
 [![Language: Objective-C](https://img.shields.io/badge/language-Objective%20C-orange.svg?style=flat)](https://developer.apple.com/reference/objectivec)
 [![Platform](https://img.shields.io/cocoapods/p/YJCocoa.svg?style=flat)](http://cocoadocs.org/docsets/YJCocoa)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/937447974/YJCocoa/blob/master/LICENSE)
@@ -89,12 +88,11 @@ UICollectionView封装
 3. 自带存储数据源，支持单数组和多数组显示的数据源。
 4. 自动将数据从UIViewController传输到UICollectionViewCell，支持任意数据类型的传输，如项目中常用的CellModel、Dictionary字典。
 5. 自动优化UICollectionView滑动卡顿，支持同步和异步刷新UICollectionViewCell。
-6. 支持多种点击cell的监听方式，可使用protocol或block。
-7. 支持多种创建UICollectionViewCell的方式，如纯代码、xib和storyboard。无须改变你写代码的习惯。
-8. 支持UICollectionViewFlowLayout动态布局；可设置一行显示个数，系统自动计算item宽度；可开启高度自适应，框架会根据计算的宽度动态缩放宽。
-9. 自动register注册UICollectionViewCell，自动显示UICollectionViewCell，自动缓存UICollectionViewCell。
-10. 自动计算cell显示的高度或手动计算cell显示的高度，并缓存高度。多种缓存高度策略：
-	1. 根据相同的UITableViewCell类缓存高度；
+6. 支持多种创建UICollectionViewCell的方式，如纯代码、xib和storyboard。无须改变你写代码的习惯。
+7. 支持UICollectionViewFlowLayout动态布局；可设置一行显示个数，系统自动计算item宽度；可开启高度自适应，框架会根据计算的宽度动态缩放宽。
+8. 自动register注册UICollectionViewCell，自动显示UICollectionViewCell，自动缓存UICollectionViewCell。
+9. 自动计算cell显示的高度或手动计算cell显示的高度，并缓存高度。多种缓存高度策略：
+	1. 根据相同的UICollectionViewCell类缓存高度；
 	2. 根据NSIndexPath对应的位置缓存高度；
 	3. 根据类名和NSIndexPath双重绑定缓存高度。
 
@@ -130,10 +128,9 @@ UITableView管理器
 3. 自带存储数据源，支持UITableViewStylePlain和UITableViewStyleGrouped显示的数据源。
 4. 自动将数据从UIViewController传输到UITableViewCell，支持任意数据类型的传输，如项目中常用的CellModel、Dictionary字典。
 5. 自动优化UITableView滑动卡顿，支持同步和异步刷新UITableViewCell。
-6. 支持多种点击cell的监听方式，可使用protocol或block。
-7. 支持多种创建UITableViewCell的方式，如纯代码、xib和storyboard。无须改变你写代码的习惯。
-8. 自动register注册UITableViewCell，自动显示UITableViewCell，自动缓存UITableViewCell。
-9. 自动计算cell显示的高度或手动计算cell显示的高度，并缓存高度。多种缓存高度策略：
+6. 支持多种创建UITableViewCell的方式，如纯代码、xib和storyboard。无须改变你写代码的习惯。
+7. 自动register注册UITableViewCell，自动显示UITableViewCell，自动缓存UITableViewCell。
+8. 自动计算cell显示的高度或手动计算cell显示的高度，并缓存高度。多种缓存高度策略：
 	1. 根据相同的UITableViewCell类缓存高度；
 	2. 根据NSIndexPath对应的位置缓存高度；
 	3. 根据类名和NSIndexPath双重绑定缓存高度。
@@ -259,6 +256,11 @@ YJ技术支持群：557445088
 | | 2016-12-07 | CollectionViewManager和CollectionViewManager增加对Cell. reuseIdentifier属性的防空处理 |
 | | | DictionaryModel增加对NSURL和NSNumber属性相对于字典中数据的容错处理 |
 | 5.1.0 | 2016-12-09 | URLSession上线，大型APP网络架构，兼容任何一款网络SDK，并将其转化为面向对象请求，且支持断网重连 |
+| 5.1.1 | 2016-12-14 | AOP修复崩溃错误 |
+| | 2016-12-15 | CollectionViewManager和TableViewManager增加数据源越界保护 |
+| | 2016-12-16 | TableViewManager增加+ (YJUITableViewCellCreate)cellCreate方法强制实现 |
+| | | CollectionViewManager和TableViewManager增加重用标识符 |
+| | | 修复部分警告代码 |
 
 ##Copyright
 
