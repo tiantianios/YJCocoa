@@ -1,0 +1,14 @@
+PODS:
+  - YJCocoa/AppFrameworks/Foundation/Other (5.2.0)
+  - YJCocoa/AppFrameworks/Foundation/Singleton (5.2.0):
+    - YJCocoa/AppFrameworks/Foundation/Other
+
+DEPENDENCIES:
+  - YJCocoa/AppFrameworks/Foundation/Singleton
+
+SPEC CHECKSUMS:
+  YJCocoa: 084a1238bf9297e7a0be98e8ddc689d88aeb6f98
+
+PODFILE CHECKSUM: 3e59b3898e1bcbcfcb1dd5edc8b868f8217a2a1f
+
+COCOAPODS: 1.1.1
