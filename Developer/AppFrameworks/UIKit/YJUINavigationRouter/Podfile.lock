@@ -1,14 +1,18 @@
 PODS:
-  - YJCocoa/AppFrameworks/Foundation/Other (5.2.0)
-  - YJCocoa/AppFrameworks/Foundation/Singleton (5.2.0):
+  - YJCocoa/AppFrameworks/Foundation/Http (5.4.1):
+    - YJCocoa/AppFrameworks/Foundation/URLCode
+  - YJCocoa/AppFrameworks/Foundation/Other (5.4.1)
+  - YJCocoa/AppFrameworks/Foundation/Singleton (5.4.1):
     - YJCocoa/AppFrameworks/Foundation/Other
+  - YJCocoa/AppFrameworks/Foundation/URLCode (5.4.1)
 
 DEPENDENCIES:
+  - YJCocoa/AppFrameworks/Foundation/Http
   - YJCocoa/AppFrameworks/Foundation/Singleton
 
 SPEC CHECKSUMS:
-  YJCocoa: 084a1238bf9297e7a0be98e8ddc689d88aeb6f98
+  YJCocoa: 3bfaaa3b390f94328e6a30abd99c2976048cef29
 
-PODFILE CHECKSUM: 3e59b3898e1bcbcfcb1dd5edc8b868f8217a2a1f
+PODFILE CHECKSUM: e09cf74398257951d5d730c3313e4dfef1d9a493
 
 COCOAPODS: 1.1.1
