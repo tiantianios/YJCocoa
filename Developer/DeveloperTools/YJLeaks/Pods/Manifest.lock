@@ -1,12 +1,16 @@
 PODS:
+  - YJCocoa/AppFrameworks/Foundation/Other (5.5.1)
+  - YJCocoa/AppFrameworks/Foundation/Singleton (5.5.1):
+    - YJCocoa/AppFrameworks/Foundation/Other
   - YJCocoa/System/Dispatch (5.5.1)
 
 DEPENDENCIES:
+  - YJCocoa/AppFrameworks/Foundation/Singleton
   - YJCocoa/System/Dispatch
 
 SPEC CHECKSUMS:
   YJCocoa: 596bc0076cc17f097f5aba8b5d0b28077df90a8b
 
-PODFILE CHECKSUM: 6df299ea8263c6fbb9cad1545b13053927ddb7b4
+PODFILE CHECKSUM: 07474a92e843efd8ff2f4e1a0cee752d71cd219d
 
 COCOAPODS: 1.1.1
