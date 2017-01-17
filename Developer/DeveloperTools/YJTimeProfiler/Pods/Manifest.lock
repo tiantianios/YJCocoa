@@ -1,0 +1,12 @@
+PODS:
+  - YJCocoa/System/Dispatch (6.0.0)
+
+DEPENDENCIES:
+  - YJCocoa/System/Dispatch
+
+SPEC CHECKSUMS:
+  YJCocoa: 1e6d6a2dafc82faa3c6423243f271cae04fe836e
+
+PODFILE CHECKSUM: f26a893d444c302822e19c25df712b43b5b3aff1
+
+COCOAPODS: 1.1.1
