@@ -1,6 +1,10 @@
 ![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2016110201.png)
 
-[![Language: Objective-C](https://img.shields.io/badge/language-Objective%20C-orange.svg?style=flat)](https://developer.apple.com/reference/objectivec) [![Platform](https://img.shields.io/cocoapods/p/YJCocoa.svg?style=flat)](http://cocoadocs.org/docsets/YJCocoa) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/937447974/YJCocoa/blob/master/LICENSE) [![CocoaPods](https://img.shields.io/cocoapods/v/YJCocoa.svg?style=flat)](http://cocoapods.org) [![Apps](https://img.shields.io/cocoapods/at/YJCocoa.svg?style=flat)](http://cocoadocs.org/docsets/YJCocoa) [![QQ群](https://img.shields.io/badge/QQ群-557445088-blue.svg?style=flat)](https://github.com/937447974)
+[![Language: Objective-C](https://img.shields.io/badge/language-Objective%20C-orange.svg?style=flat)](https://developer.apple.com/reference/objectivec) 
+[![Platform](https://img.shields.io/cocoapods/p/YJCocoa.svg?style=flat)](http://cocoadocs.org/docsets/YJCocoa) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/937447974/YJCocoa/blob/master/LICENSE) 
+[![CocoaPods](https://img.shields.io/cocoapods/v/YJCocoa.svg?style=flat)](http://cocoapods.org) 
+![Apps](https://img.shields.io/cocoapods/at/YJCocoa.svg?style=flat) 
+![QQ群](https://img.shields.io/badge/QQ群-557445088-blue.svg?style=flat)
 
 YJ系列开源库
 
@@ -316,6 +320,9 @@ YJ技术支持群：557445088
 | | 2017-01-11 | DeveloperTools层上线，集成相关开发工具 |
 | | 2017-01-12 | Swizzling上线，支持随时随地交换方法。 |
 | | 2017-01-13 | Leaks上线，用于捕获项目中有内存泄漏的UIViewController、UIView和Property属性。 |
+| 6.0.1 | 2017-01-17 | Swizzling和Leaks log打印优化 |
+| | 2017-01-18 | Timer倒计时time=0时自动失效，正计时去掉上限 |
+| 6.0.2 | 2017-02-04 | 修复Http URLEncode解析崩溃 |
 
 ##Copyright
 
