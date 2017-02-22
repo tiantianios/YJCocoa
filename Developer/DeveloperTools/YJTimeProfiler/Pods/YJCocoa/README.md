@@ -323,6 +323,10 @@ YJ技术支持群：557445088
 | 6.0.1 | 2017-01-17 | Swizzling和Leaks log打印优化 |
 | | 2017-01-18 | Timer倒计时time=0时自动失效，正计时去掉上限 |
 | 6.0.2 | 2017-02-04 | 修复Http URLEncode解析崩溃 |
+| 6.1.0 | 2017-02-09 | TimeProfiler支持直接打印主线程卡顿堆栈信息 |
+| | | PageView架构升级 |
+| | 2017-02-12 | Swizzling增加class方法交换 |
+| | 2017-02-14 | URLSession架构升级 |
 
 ##Copyright
 
