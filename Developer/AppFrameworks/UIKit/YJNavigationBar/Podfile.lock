@@ -1,10 +1,12 @@
 PODS:
-  - YJCocoa/AppFrameworks/UIKit/ViewGeometry (4.0.0)
+  - YJCocoa/AppFrameworks/UIKit/ViewGeometry (6.1.0)
 
 DEPENDENCIES:
   - YJCocoa/AppFrameworks/UIKit/ViewGeometry
 
 SPEC CHECKSUMS:
-  YJCocoa: 6fb0c19957c8caae575b6fba2663a28517bb5514
+  YJCocoa: 30613ae1e9023246ea677efa7878c74198af3a35
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 00b4be00634885c1dd82d5afe1aa0e744ff5b26c
+
+COCOAPODS: 1.1.1
