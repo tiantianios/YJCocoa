@@ -12,15 +12,19 @@
 #import "YJSwizzling.h"
 #import <objc/runtime.h>
 #import "YJDispatch.h"
-#import "YJNSSingletonMCenter.h"
+#import "YJNSSingleton.h"
 
 @implementation NSObject (YJSwizzling)
+
++ (void)swizzlingClassSEL:(SEL)originalSEL withSEL:(SEL)swizzlingSEL {
+    [object_getClass(self) swizzlingSEL:originalSEL withSEL:swizzlingSEL];
+}
 
 + (void)swizzlingSEL:(SEL)originalSEL withSEL:(SEL)swizzlingSEL {
     dispatch_sync_main(^{
         Class class = self.class;
         // cache
-        NSMutableDictionary *selCache = [YJNSSingletonMC registerStrongSingleton:[NSMutableDictionary class] forIdentifier:@"YJSwizzling"];
+        NSMutableDictionary *selCache = YJNSSingletonS(NSMutableDictionary, @"YJSwizzling");
         NSString *key = [NSString stringWithFormat:@"%@-%@-%@", NSStringFromClass(class), NSStringFromSelector(originalSEL), NSStringFromSelector(swizzlingSEL)];
         if ([selCache objectForKey:key]) {
             return;

@@ -1,1 +1,1 @@
-../../../YJCocoa/Cocoa/AppFrameworks/Foundation/Singleton/YJNSSingletonMCenter.h
+../../../YJCocoa/Cocoa/AppFrameworks/Foundation/Singleton/Core/YJNSSingletonMCenter.h

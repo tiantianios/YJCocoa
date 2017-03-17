@@ -1,11 +1,11 @@
 PODS:
-  - YJCocoa/System/Dispatch (6.1.0)
+  - YJCocoa/System/Dispatch (6.2.0)
 
 DEPENDENCIES:
   - YJCocoa/System/Dispatch
 
 SPEC CHECKSUMS:
-  YJCocoa: 30613ae1e9023246ea677efa7878c74198af3a35
+  YJCocoa: 30cce39bb154e45a32c5a505e5e8a1b887c32e7c
 
 PODFILE CHECKSUM: f26a893d444c302822e19c25df712b43b5b3aff1
 

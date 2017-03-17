@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F6F68EE259610C1DBF7AFC16000080 /* YJNSSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA66136BE8F4D6693C9E92FFBCAA189 /* YJNSSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B22473F1641D2D31F8B4F90657AA957 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		76EEF912155BFD9FA273F62F533546F8 /* YJDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E23E9B84365D37A96B75B9BD9649D565 /* YJDispatch.m */; };
-		7DE2B17394CE063682134EC8EE2085E9 /* YJDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 081075AB8CF3982B8EF932335C5E826D /* YJDispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8808B19773AD902AA519D676E8E2F715 /* YJNSSingletonMCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 455BCBE45EC35E520528925BA9B1EA23 /* YJNSSingletonMCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		214147F3600C8E758F2EA79BD10456B1 /* YJDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 081075AB8CF3982B8EF932335C5E826D /* YJDispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28C42755B15FD13D6F7B9EE815B3EB8F /* YJNSFoundationOther.h in Headers */ = {isa = PBXBuildFile; fileRef = E39B6F18BFBC1F7F5E1BE180B79F08ED /* YJNSFoundationOther.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B907A9A00741F5FD27F3EFFC7365172 /* YJCocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7D31BA8E41BD15EE93396E2A876C45 /* YJCocoa-dummy.m */; };
+		3BFB06F15F143E6864C6A38077183F4C /* YJNSSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = C82B5E4BF17F3D491D3C3B9ED7360916 /* YJNSSingleton.m */; };
+		3D7514F30223ACD648DAF8B63ECEAE6A /* YJNSSingletonMCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D520DD026922FDFE19E9FDC2577A3302 /* YJNSSingletonMCenter.m */; };
+		5635CFFB6FC0F5585CE688F40C7B7C27 /* YJSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EF6C84FE321F85C03B4FDFD095202C /* YJSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		866DF70E0446D7CB37C6F77AAE43B96E /* YJSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEC964304A79916961E9D60FA85362C /* YJSwizzling.m */; };
 		88566B85A53325A2ECC770E7779FF66E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		8B5DEEE8759B8EFA8499DB32089E6043 /* YJNSFoundationOther.m in Sources */ = {isa = PBXBuildFile; fileRef = E436207478276819A7D983BE863B57C4 /* YJNSFoundationOther.m */; };
-		8DE45F0B5D3347F188313E99046D1194 /* YJCocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7D31BA8E41BD15EE93396E2A876C45 /* YJCocoa-dummy.m */; };
+		9CD8AD2F8CEF1C0A9788338DA0AC205E /* YJDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E23E9B84365D37A96B75B9BD9649D565 /* YJDispatch.m */; };
 		A4EAE1CC2B7803943DD3D5C5FA0D865A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		A9E7A0ED101AAC36F7CE47FD7A406B0C /* YJSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4A12E6D39EBC5E7FC03362C602B948 /* YJSwizzling.m */; };
-		D8539F5533DC51C2A1AD74015839C344 /* YJSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B716C332D2EAE98B6057336C02DD236 /* YJSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB2B9D59A5CB3CE8D95CD355634734DB /* YJNSFoundationOther.h in Headers */ = {isa = PBXBuildFile; fileRef = 797CED7185D9318126B8255A75A5B142 /* YJNSFoundationOther.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4CE1D1610186B81C6D44B39305503B2 /* YJNSSingletonMCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAF848C8E8D039FE2F4D3DF644D3A65 /* YJNSSingletonMCenter.m */; };
+		C87DB0969FBA227358A50AD8F375465D /* YJNSFoundationOther.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F769C35A97A9B9D539F0BB0057B9C /* YJNSFoundationOther.m */; };
+		E697D2B4D139BC1DC90FF71914701A3C /* YJNSSingletonMCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB80EAB17B26FAAF4C1227207BE146 /* YJNSSingletonMCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDB78F9AED24D873E3500F23B09D7F02 /* Pods-YJLeaks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD110A0126E531BE360454428F5F00 /* Pods-YJLeaks-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -37,25 +39,27 @@
 		081075AB8CF3982B8EF932335C5E826D /* YJDispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJDispatch.h; path = Cocoa/System/Dispatch/YJDispatch.h; sourceTree = "<group>"; };
 		09F9AF2AECFCF2B1634FD531EDE4D3B0 /* Pods-YJLeaks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YJLeaks.release.xcconfig"; sourceTree = "<group>"; };
 		1569EE84FCDC96B34C54924E9391843A /* Pods-YJLeaks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YJLeaks.debug.xcconfig"; sourceTree = "<group>"; };
+		2F0F769C35A97A9B9D539F0BB0057B9C /* YJNSFoundationOther.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJNSFoundationOther.m; path = Cocoa/AppFrameworks/Foundation/Other/YJNSFoundationOther.m; sourceTree = "<group>"; };
 		2FFD110A0126E531BE360454428F5F00 /* Pods-YJLeaks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YJLeaks-dummy.m"; sourceTree = "<group>"; };
 		375446D15B99A7EE6712C34FBB0DAB25 /* Pods-YJLeaks-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YJLeaks-acknowledgements.markdown"; sourceTree = "<group>"; };
-		455BCBE45EC35E520528925BA9B1EA23 /* YJNSSingletonMCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJNSSingletonMCenter.h; path = Cocoa/AppFrameworks/Foundation/Singleton/YJNSSingletonMCenter.h; sourceTree = "<group>"; };
-		4B716C332D2EAE98B6057336C02DD236 /* YJSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJSwizzling.h; path = Cocoa/AppFrameworks/Foundation/Swizzling/YJSwizzling.h; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		62EAF530C5C37E24BF4EC06ECC75EAEC /* libPods-YJLeaks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YJLeaks.a"; path = "libPods-YJLeaks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		797CED7185D9318126B8255A75A5B142 /* YJNSFoundationOther.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJNSFoundationOther.h; path = Cocoa/AppFrameworks/Foundation/Other/YJNSFoundationOther.h; sourceTree = "<group>"; };
 		7E7D31BA8E41BD15EE93396E2A876C45 /* YJCocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YJCocoa-dummy.m"; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8AA66136BE8F4D6693C9E92FFBCAA189 /* YJNSSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJNSSingleton.h; path = Cocoa/AppFrameworks/Foundation/Singleton/YJNSSingleton.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AD6EBBDF5B4C228468F45B14E294E9C6 /* Pods-YJLeaks-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YJLeaks-acknowledgements.plist"; sourceTree = "<group>"; };
-		BFAF848C8E8D039FE2F4D3DF644D3A65 /* YJNSSingletonMCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJNSSingletonMCenter.m; path = Cocoa/AppFrameworks/Foundation/Singleton/YJNSSingletonMCenter.m; sourceTree = "<group>"; };
+		B3EF6C84FE321F85C03B4FDFD095202C /* YJSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJSwizzling.h; path = Cocoa/AppFrameworks/Foundation/Swizzling/YJSwizzling.h; sourceTree = "<group>"; };
+		C82B5E4BF17F3D491D3C3B9ED7360916 /* YJNSSingleton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJNSSingleton.m; path = Cocoa/AppFrameworks/Foundation/Singleton/YJNSSingleton.m; sourceTree = "<group>"; };
+		D520DD026922FDFE19E9FDC2577A3302 /* YJNSSingletonMCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJNSSingletonMCenter.m; path = Cocoa/AppFrameworks/Foundation/Singleton/Core/YJNSSingletonMCenter.m; sourceTree = "<group>"; };
 		E0863052615665BCE1D13EDDE0EDE074 /* YJCocoa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YJCocoa.xcconfig; sourceTree = "<group>"; };
 		E14F1AA8A21450531AD8E225B63950E7 /* libYJCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYJCocoa.a; path = libYJCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23E9B84365D37A96B75B9BD9649D565 /* YJDispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJDispatch.m; path = Cocoa/System/Dispatch/YJDispatch.m; sourceTree = "<group>"; };
-		E436207478276819A7D983BE863B57C4 /* YJNSFoundationOther.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJNSFoundationOther.m; path = Cocoa/AppFrameworks/Foundation/Other/YJNSFoundationOther.m; sourceTree = "<group>"; };
+		E39B6F18BFBC1F7F5E1BE180B79F08ED /* YJNSFoundationOther.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJNSFoundationOther.h; path = Cocoa/AppFrameworks/Foundation/Other/YJNSFoundationOther.h; sourceTree = "<group>"; };
 		EC5403F0BB0617316996A2BACFD3FE29 /* Pods-YJLeaks-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YJLeaks-resources.sh"; sourceTree = "<group>"; };
-		FA4A12E6D39EBC5E7FC03362C602B948 /* YJSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJSwizzling.m; path = Cocoa/AppFrameworks/Foundation/Swizzling/YJSwizzling.m; sourceTree = "<group>"; };
+		EECB80EAB17B26FAAF4C1227207BE146 /* YJNSSingletonMCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJNSSingletonMCenter.h; path = Cocoa/AppFrameworks/Foundation/Singleton/Core/YJNSSingletonMCenter.h; sourceTree = "<group>"; };
 		FF5C57B72E6FA8B8AD3AD0ED14B639AB /* Pods-YJLeaks-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YJLeaks-frameworks.sh"; sourceTree = "<group>"; };
+		FFEC964304A79916961E9D60FA85362C /* YJSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJSwizzling.m; path = Cocoa/AppFrameworks/Foundation/Swizzling/YJSwizzling.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,15 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C5DEF5CE3D21CCCFBB4143FA696A402 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				797CED7185D9318126B8255A75A5B142 /* YJNSFoundationOther.h */,
-				E436207478276819A7D983BE863B57C4 /* YJNSFoundationOther.m */,
-			);
-			name = Other;
-			sourceTree = "<group>";
-		};
 		3F75CF464A3E2C0571E6DFC870F0ACDC /* Pods-YJLeaks */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,15 +96,6 @@
 			);
 			name = "Pods-YJLeaks";
 			path = "Target Support Files/Pods-YJLeaks";
-			sourceTree = "<group>";
-		};
-		3FF6EAA2DCDDFD91DD0D7DBE774EC05D /* Swizzling */ = {
-			isa = PBXGroup;
-			children = (
-				4B716C332D2EAE98B6057336C02DD236 /* YJSwizzling.h */,
-				FA4A12E6D39EBC5E7FC03362C602B948 /* YJSwizzling.m */,
-			);
-			name = Swizzling;
 			sourceTree = "<group>";
 		};
 		406B5ADB4848C8D3221D3415583FF74D /* Products */ = {
@@ -137,10 +123,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		6911BB0FBFAB7BD335D5F1E2D279E3AA /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				8AA66136BE8F4D6693C9E92FFBCAA189 /* YJNSSingleton.h */,
+				C82B5E4BF17F3D491D3C3B9ED7360916 /* YJNSSingleton.m */,
+				9B98D63A0311F08DAB72C93C1E20AEE7 /* Core */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
 		74C8ABDC5928A0E903B5C03A4BEF0227 /* AppFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F615D56E04C3350CB8D67696CEB717C1 /* Foundation */,
+				E10FCC7E4D3EBA9177562B65717BDC21 /* Foundation */,
 			);
 			name = AppFrameworks;
 			sourceTree = "<group>";
@@ -156,13 +152,22 @@
 			);
 			sourceTree = "<group>";
 		};
-		863C1EF0436BFAB6F8CF47AB69A3D104 /* Singleton */ = {
+		970DCF6153C089108C2A179C1F193B99 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				455BCBE45EC35E520528925BA9B1EA23 /* YJNSSingletonMCenter.h */,
-				BFAF848C8E8D039FE2F4D3DF644D3A65 /* YJNSSingletonMCenter.m */,
+				E39B6F18BFBC1F7F5E1BE180B79F08ED /* YJNSFoundationOther.h */,
+				2F0F769C35A97A9B9D539F0BB0057B9C /* YJNSFoundationOther.m */,
 			);
-			name = Singleton;
+			name = Other;
+			sourceTree = "<group>";
+		};
+		9B98D63A0311F08DAB72C93C1E20AEE7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EECB80EAB17B26FAAF4C1227207BE146 /* YJNSSingletonMCenter.h */,
+				D520DD026922FDFE19E9FDC2577A3302 /* YJNSSingletonMCenter.m */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		9C6732D506358F5EA9384CE1F9397CA6 /* Support Files */ = {
@@ -174,6 +179,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YJCocoa";
+			sourceTree = "<group>";
+		};
+		ACE7614A7B8229C9C1F09431E260CFCD /* Swizzling */ = {
+			isa = PBXGroup;
+			children = (
+				B3EF6C84FE321F85C03B4FDFD095202C /* YJSwizzling.h */,
+				FFEC964304A79916961E9D60FA85362C /* YJSwizzling.m */,
+			);
+			name = Swizzling;
 			sourceTree = "<group>";
 		};
 		C8A43F807B495AA733EAE51482EBADB1 /* Dispatch */ = {
@@ -212,6 +226,16 @@
 			name = System;
 			sourceTree = "<group>";
 		};
+		E10FCC7E4D3EBA9177562B65717BDC21 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				970DCF6153C089108C2A179C1F193B99 /* Other */,
+				6911BB0FBFAB7BD335D5F1E2D279E3AA /* Singleton */,
+				ACE7614A7B8229C9C1F09431E260CFCD /* Swizzling */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
 		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,27 +245,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F615D56E04C3350CB8D67696CEB717C1 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				3C5DEF5CE3D21CCCFBB4143FA696A402 /* Other */,
-				863C1EF0436BFAB6F8CF47AB69A3D104 /* Singleton */,
-				3FF6EAA2DCDDFD91DD0D7DBE774EC05D /* Swizzling */,
-			);
-			name = Foundation;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		347C8DBB131B2FFD40E34B844D5D9A54 /* Headers */ = {
+		BA16F74E13CF5867B285104C79AFBB62 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE2B17394CE063682134EC8EE2085E9 /* YJDispatch.h in Headers */,
-				DB2B9D59A5CB3CE8D95CD355634734DB /* YJNSFoundationOther.h in Headers */,
-				8808B19773AD902AA519D676E8E2F715 /* YJNSSingletonMCenter.h in Headers */,
-				D8539F5533DC51C2A1AD74015839C344 /* YJSwizzling.h in Headers */,
+				214147F3600C8E758F2EA79BD10456B1 /* YJDispatch.h in Headers */,
+				28C42755B15FD13D6F7B9EE815B3EB8F /* YJNSFoundationOther.h in Headers */,
+				03F6F68EE259610C1DBF7AFC16000080 /* YJNSSingleton.h in Headers */,
+				E697D2B4D139BC1DC90FF71914701A3C /* YJNSSingletonMCenter.h in Headers */,
+				5635CFFB6FC0F5585CE688F40C7B7C27 /* YJSwizzling.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,9 +267,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AF2D3BFEA3A246A026F24BB11292C72 /* Build configuration list for PBXNativeTarget "YJCocoa" */;
 			buildPhases = (
-				838F043C77B50108BD43871C9E6EEF1F /* Sources */,
+				C98C50B3B36A746583846AA28FC3D9D9 /* Sources */,
 				53EA3497DFD167CA0588B01C7EAFF3F7 /* Frameworks */,
-				347C8DBB131B2FFD40E34B844D5D9A54 /* Headers */,
+				BA16F74E13CF5867B285104C79AFBB62 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -318,15 +333,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		838F043C77B50108BD43871C9E6EEF1F /* Sources */ = {
+		C98C50B3B36A746583846AA28FC3D9D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE45F0B5D3347F188313E99046D1194 /* YJCocoa-dummy.m in Sources */,
-				76EEF912155BFD9FA273F62F533546F8 /* YJDispatch.m in Sources */,
-				8B5DEEE8759B8EFA8499DB32089E6043 /* YJNSFoundationOther.m in Sources */,
-				E4CE1D1610186B81C6D44B39305503B2 /* YJNSSingletonMCenter.m in Sources */,
-				A9E7A0ED101AAC36F7CE47FD7A406B0C /* YJSwizzling.m in Sources */,
+				3B907A9A00741F5FD27F3EFFC7365172 /* YJCocoa-dummy.m in Sources */,
+				9CD8AD2F8CEF1C0A9788338DA0AC205E /* YJDispatch.m in Sources */,
+				C87DB0969FBA227358A50AD8F375465D /* YJNSFoundationOther.m in Sources */,
+				3BFB06F15F143E6864C6A38077183F4C /* YJNSSingleton.m in Sources */,
+				3D7514F30223ACD648DAF8B63ECEAE6A /* YJNSSingletonMCenter.m in Sources */,
+				866DF70E0446D7CB37C6F77AAE43B96E /* YJSwizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
