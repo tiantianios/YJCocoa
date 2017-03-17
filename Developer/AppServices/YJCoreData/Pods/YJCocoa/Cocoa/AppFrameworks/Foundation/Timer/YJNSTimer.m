@@ -11,11 +11,11 @@
 
 #import "YJNSTimer.h"
 #import "NSObject+YJNSPerformSelector.h"
-#import "YJNSSingletonMCenter.h"
+#import "YJNSSingleton.h"
 #import "YJSecRandom.h"
 
 /** 时间缓存池*/
-#define timerDict [YJNSSingletonMC registerStrongSingleton:[NSMutableDictionary class] forIdentifier:@"YJNSTimer"]
+#define TimerDict YJNSSingletonS(NSMutableDictionary, @"YJNSTimer")
 
 @interface YJNSTimer ()
 
@@ -28,6 +28,7 @@
 @property (nonatomic, nullable) SEL action;              ///< 目标方法
 
 @property (nonatomic, strong) NSTimer *timer; /// 计时器
+@property (nonatomic, strong) YJNSCalendar *calendar; ///<
 
 @end
 
@@ -47,7 +48,7 @@
 }
 
 + (instancetype)timerWithIdentifier:(NSString *)identifier {
-    NSMutableDictionary<NSString *, YJNSTimer *> *tDict = timerDict;
+    NSMutableDictionary<NSString *, YJNSTimer *> *tDict = TimerDict;
     if (tDict.count >= 5) {
         for (YJNSTimer *timer in tDict.allValues) {
             if (timer.weakT && !timer.weakTarget) {
@@ -57,12 +58,13 @@
     }
     YJNSTimer *timer;
     if (identifier) {
-        timer = [timerDict objectForKey:identifier];
+        timer = [tDict objectForKey:identifier];
     }
     if (!timer) {
         timer = [[YJNSTimer alloc] init];
         timer.identifier = identifier;
         timer.timeInterval = 1;
+        timer.calendar = [[YJNSCalendar alloc] init];
     }
     [tDict setObject:timer forKey:timer.identifier];
     return timer;
@@ -93,14 +95,16 @@
         [self invalidate];
         return;
     }
-    if (self.time < 0 && self.countdown) {
-        [self pause];
-        return;
-    } else if (self.time > 86400 && !self.countdown) {
-        [self pause];
-        return;
+    if (self.countdown) {
+        NSTimeInterval time = self.time - self.timeInterval;
+        if (time <= 0) {
+            [self invalidate];
+            time = 0;
+        }
+        self.time = time;
+    } else {
+        self.time = self.time + self.timeInterval;
     }
-    self.time = self.countdown ? self.time-self.timeInterval : self.time+self.timeInterval;
 }
 
 - (void)pause {
@@ -110,7 +114,7 @@
 - (void)invalidate {
     [self.timer invalidate];
     self.timer = nil;
-    [timerDict removeObjectForKey:self.identifier];
+    [TimerDict removeObjectForKey:self.identifier];
 }
 
 #pragma mark - getter & setter
@@ -123,18 +127,18 @@
 
 - (void)setTime:(NSTimeInterval)time {
     _time = time;
-    NSInteger timeC = time;
-    _day = timeC / 86400;
-    timeC -= _day * 86400;
-    _hour = timeC / 3600;
-    timeC -= _hour * 3600;
-    _minute = timeC / 60;
-    _second = time - _day * 86400 - _hour * 3600 - _minute*60;
+    if (self.unitFlags) {
+        [self.calendar components:self.unitFlags fromSecond:time];
+    }
     if (self.weakTarget) {
         [self.weakTarget performSelector:self.action withObjects:@[self]];
     } else {
         [self.strongTarget performSelector:self.action withObjects:@[self]];
     }
+}
+
+- (YJNSDateComponents *)dateComponents {
+    return self.calendar.dateComponents;
 }
 
 @end
