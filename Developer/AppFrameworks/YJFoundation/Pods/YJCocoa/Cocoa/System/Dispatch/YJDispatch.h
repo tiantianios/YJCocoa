@@ -14,12 +14,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#pragma mark - gcd
+#pragma mark - @符号
 
+#define symbol_at try {} @catch (...) {}
+
+
+#pragma mark - rac
 /** 弱引用*/
-#define __weakSelf   __weak __typeof__(self) weakSelf = self;
+#define weakSelf symbol_at  __weak __typeof(self) wSelf = self;
 /** 强引用*/
-#define __strongSelf __strong __typeof(weakSelf) strongSelf = weakSelf;
+#define strongSelf symbol_at __strong __typeof(wSelf) self = wSelf;
+
+
+#pragma mark - gcd
 
 /** 主线程运行,同步执行*/
 FOUNDATION_EXPORT void dispatch_sync_main(dispatch_block_t block);
@@ -57,11 +64,6 @@ FOUNDATION_EXPORT dispatch_source_t dispatch_timer_main(NSTimeInterval interval,
 FOUNDATION_EXPORT dispatch_source_t dispatch_timer_default(NSTimeInterval interval, dispatch_block_t handler);
 
 
-#pragma mark - @符号
-
-#define symbol_at try {} @catch (...) {}
-
-
 #pragma mark - @finally_execute{}
 
 #define cleanup_block void (^ cleanup_block_t)(void)
@@ -72,10 +74,10 @@ static inline void executeCleanupBlock (__strong cleanup_block_t _Nonnull * _Non
 
 /**
  {
-     @finally_execute {
-        NSLog(@"finally_execute{}");
-     };
-     NSLog(@"finally_execute");
+ @finally_execute {
+ NSLog(@"finally_execute{}");
+ };
+ NSLog(@"finally_execute");
  }
  print "finally_execute \n finally_execute{}"
  */
@@ -88,13 +90,13 @@ static inline void executeCleanupBlock (__strong cleanup_block_t _Nonnull * _Non
  pthread_mutex_t _lock;            //1. @interface内属性
  pthread_mutex_init(&_lock, NULL); //2. init
  {                                 //3. {}内加锁
-    @synchronized_pthread (_lock)
+ @synchronized_pthread (_lock)
  }
  pthread_mutex_destroy(&_lock);    //4. dealloc
  */
 #define synchronized_pthread(lock) \
-            symbol_at \
-            pthread_mutex_lock(&lock); @finally_execute { pthread_mutex_unlock(&lock); };
+symbol_at \
+pthread_mutex_lock(&lock); @finally_execute { pthread_mutex_unlock(&lock); };
 
 /**
  @synchronized_pthread_try(_lock) { //1. 🔐成功
@@ -102,7 +104,7 @@ static inline void executeCleanupBlock (__strong cleanup_block_t _Nonnull * _Non
  } @synchronized_pthread_try_end    //3. 🔐结束
  */
 #define synchronized_pthread_try(lock)  symbol_at if (pthread_mutex_trylock(&lock) == 0) {\
-                                                    @finally_execute { pthread_mutex_unlock(&lock); };
+@finally_execute { pthread_mutex_unlock(&lock); };
 #define synchronized_pthread_try_else   symbol_at } else {
 #define synchronized_pthread_try_end    symbol_at }
 
