@@ -9,60 +9,60 @@ YJ系列开源库
 
 整体架构和苹果类似,每一层都有各自的开源库。
 
-#1 ![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2016101001.png)AppFrameworks
+# 1 ![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2016101001.png)AppFrameworks
 
-##1.1 Foundation
+## 1.1 Foundation
 
-###1.1.1 AOP
+### 1.1.1 AOP
 
 AOP切面编程，将一对一的通信转换为一对多的通信。
 
-###1.1.2 Calendar
+### 1.1.2 Calendar
 
 日历工具，快速将秒转换为天、时、分等。
 
-###1.1.3 DictionaryModel
+### 1.1.3 DictionaryModel
 
 快速高效的转换模型和Model。
 
-###1.1.4 Directory
+### 1.1.4 Directory
 
 快速获取应用内目录
 
-###1.1.5 FileManager
+### 1.1.5 FileManager
 
 NSFileManager扩展，支持快速移动文件。主要是替换系统方法`moveItemAtPath:toPath:error:`和`moveItemAtURL:toURL:error:`
 
-###1.1.6 Http
+### 1.1.6 Http
 
 1. http链接解析，快速获取其中参数，支持URLDecode解码;
 2. http链接组装，快速组装相关参数，支持URLEncode编码。
 
-###1.1.7 Log
+### 1.1.7 Log
 
 NSLog打印优化，Unicode自动转化为中文输出。
 
-###1.1.8 PerformSelector
+### 1.1.8 PerformSelector
 
 合并respondsToSelector和performSelector方法，用于安全执行Selector，可携带多个参数
 
-###1.1.9 Router
+### 1.1.9 Router
 
 Router是NavigationRouter的基础库，主要用于实现组件化开发，也可定制组件化开发方案。
 
 1. 支持Get或Post跳转；
 2. 支持长连接或短连接。
 
-###1.1.10 Singleton
+### 1.1.10 Singleton
 
 1. 通过宏定义，快速将任何类转换为单例类。如`YJNSSingletonW(NSMutableDictionary, @"identifier")`
 2. 可定制全局单例和局域单例。
 
-###1.1.11 Swizzling
+### 1.1.11 Swizzling
 
 支持随时随地交换方法。
 
-###1.1.12 Timer
+### 1.1.12 Timer
 
 替换NSTimer实现相关计时器功能。
 
@@ -71,11 +71,11 @@ Router是NavigationRouter的基础库，主要用于实现组件化开发，也�
 1. 随着应用的回收而回收。
 2. 随着当前使用类的回收而回收。如VC回收时，YJSTimer也会回收。
 
-###1.1.13 URLCode
+### 1.1.13 URLCode
 
 URLEncode编码和URLDecode解码
 
-###1.1.14 URLSession
+### 1.1.14 URLSession
 
 大型APP网络架构，具有以下特性：
 
@@ -84,54 +84,53 @@ URLEncode编码和URLDecode解码
 3. 多种请求方式，可以面向接口请求服务器或面向对象请求服务器；
 4. 支持网络重连。
 
-##1.2 UIKit
+## 1.2 UIKit
 
-###1.2.1 AutoLayout
+### 1.2.1 AutoLayout
 
 AutoLayout主要实现NSLayoutConstraint的相关扩展和封装，它能使我们关于屏幕布局的开发越来越简单。
  
-2. IOS和Swift的编程代码**一模一样**。
-3. 代码写法模仿Apple关于约束的原生伪代码，增加代码可阅读性。
-4. 将IOS9推出的NSLayoutAnchor迁移到IOS6上使用。
+1. IOS和Swift的编程代码**一模一样**。
+2. 代码写法模仿Apple关于约束的原生伪代码，增加代码可阅读性。
+3. 将IOS9推出的NSLayoutAnchor迁移到IOS6上使用。
 
-###1.2.2 CollectionViewManager
+### 1.2.2 CollectionViewManager
 
 UICollectionView封装
 
 1. 支持市面上百分之百的架构，无须修改原有框架结构。你可以把它作为插件，也可以把它作为UICollectionView的控制中心使用。
 2. 减压UIViewController，使其代码尽可能的精简，可阅读性更高。UIViewController不在关心UICollectionViewCell的相关显示，缓存。UIViewController与UICollectionViewCell完全隔离。
 3. 自带存储数据源，支持单数组和多数组显示的数据源。
-4. 自动将数据从UIViewController传输到UICollectionViewCell，支持任意数据类型的传输，如项目中常用的CellModel、Dictionary字典。
-5. 自动优化UICollectionView滑动卡顿，支持同步和异步刷新UICollectionViewCell。
-6. 支持多种创建UICollectionViewCell的方式，如纯代码、xib和storyboard。无须改变你写代码的习惯。
-7. 支持UICollectionViewFlowLayout动态布局；可设置一行显示个数，系统自动计算item宽度；可开启高度自适应，框架会根据计算的宽度动态缩放宽。
-8. 自动register注册UICollectionViewCell，自动显示UICollectionViewCell，自动缓存UICollectionViewCell。
-9. 自动计算cell显示的高度或手动计算cell显示的高度，并缓存高度。多种缓存高度策略：
+4. 自动将数据从UIViewController传输到UICollectionViewCell，支持任意数据类型的传输。
+5. 支持多种创建UICollectionViewCell的方式，如纯代码、xib和storyboard。无须改变你写代码的习惯。
+6. 支持UICollectionViewFlowLayout动态布局；可设置一行显示个数，系统自动计算item宽度；可开启高度自适应，框架会根据计算的宽度动态缩放宽。
+7. 自动register注册UICollectionViewCell，自动显示UICollectionViewCell，自动缓存UICollectionViewCell。
+8. 自动计算cell显示的高度或手动计算cell显示的高度，并缓存高度。多种缓存高度策略：
 	1. 根据相同的UICollectionViewCell类缓存高度；
 	2. 根据NSIndexPath对应的位置缓存高度；
 	3. 根据类名和NSIndexPath双重绑定缓存高度。
 
-###1.2.3 Color
+### 1.2.3 Color
 
 UIColor相关。
 
 1. 函数生成UIColor，支持RGB和十六进制。
 2. 点语法快速设置背景色。
 
-###1.2.4 InputLength
+### 1.2.4 InputLength
 
 UITextField和UITextView可输入长度控制。
 
-###1.2.5 NavigationBar
+### 1.2.5 NavigationBar
 
 NavigationBar主要实现对UINavigationBar的封装，可快速自定义配置UINavigationBar。
 
-###1.2.6 NavigationRouter
+### 1.2.6 NavigationRouter
 
 NavigationRouter主要用于实现项目组件化 。
 
 
-###1.2.7 PageView
+### 1.2.7 PageView
 
 PageView主要实现对轮播图、导航图、小说翻页等多种翻页模式封装。
 
@@ -139,33 +138,32 @@ PageView主要实现对轮播图、导航图、小说翻页等多种翻页模式
 2. 多种配置模式适应任何多页面需求。
 3. 任何间隔切换VC，内存释放稳定。
 
-###1.2.8 ScrollViewManager
+### 1.2.8 ScrollViewManager
 
 ScrollViewManager主用用于监听UIScrollView的滚动状态。
 
-###1.2.9 TableViewManager
+### 1.2.9 TableViewManager
 
 UITableView管理器
 
 1. 支持市面上百分之百的架构，无须修改原有框架结构。你可以把它作为插件，也可以把它作为TableView的控制中心使用。
 2. 减压UIViewController，使其代码尽可能的精简，可阅读性更高。UIViewController不在关心UITableViewCell的相关显示，缓存。UIViewController与UITableViewCell完全隔离。
 3. 自带存储数据源，支持UITableViewStylePlain和UITableViewStyleGrouped显示的数据源。
-4. 自动将数据从UIViewController传输到UITableViewCell，支持任意数据类型的传输，如项目中常用的CellModel、Dictionary字典。
-5. 自动优化UITableView滑动卡顿，支持同步和异步刷新UITableViewCell。
-6. 支持多种创建UITableViewCell的方式，如纯代码、xib和storyboard。无须改变你写代码的习惯。
-7. 自动register注册UITableViewCell，自动显示UITableViewCell，自动缓存UITableViewCell。
-8. 自动计算cell显示的高度或手动计算cell显示的高度，并缓存高度。多种缓存高度策略：
+4. 自动将数据从UIViewController传输到UITableViewCell，支持任意数据类型的传输。
+5. 支持多种创建UITableViewCell的方式，如纯代码、xib和storyboard。无须改变你写代码的习惯。
+6. 自动register注册UITableViewCell，自动显示UITableViewCell，自动缓存UITableViewCell。
+7. 自动计算cell显示的高度或手动计算cell显示的高度，并缓存高度。多种缓存高度策略：
 	1. 根据相同的UITableViewCell类缓存高度；
 	2. 根据NSIndexPath对应的位置缓存高度；
 	3. 根据类名和NSIndexPath双重绑定缓存高度。
 
-###1.2.10 ViewGeometry
+### 1.2.10 ViewGeometry
 
 UIView(UIViewGeometry)相关扩展，可快速设置frame、bounds和center。
 
-#2 ![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2016101002.png)AppServices
+# 2 ![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2016101002.png)AppServices
 
-##2.1 CoreData
+## 2.1 CoreData
 
 CoreData封装
 
@@ -175,44 +173,45 @@ CoreData封装
 3. 手动保存数据，支持前台保存和后台保存。
 4. 通过迁移管理器做数据库版本升级时，可时时获取升级进度。
 
-#3 ![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2016101006.png)DeveloperTools
+# 3 ![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2016101006.png)DeveloperTools
 
-##3.1 Leaks
+## 3.1 Leaks
 
 内存泄漏分析器，用于捕获项目中有内存泄漏的UIViewController、UIView和Property属性。
 
-##3.2 MemoryInfo
+## 3.2 MemoryInfo
 
 主要用于获取运行过程中的RAM相关信息，如剩余内存。
 
-##3.3 TimeProfiler
+## 3.3 TimeProfiler
 
 时间分析器，主要用于分析引起主线程卡顿的代码。
 
 1. 支持定制模块分析。
 2. 支持设置分析频率和帧间隔。
+3. 控制台打印 VC 加载时间。
 
-#4 ![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2016101005.png)System
+# 4 ![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2016101005.png)System
 
-##4.1 Dispatch
+## 4.1 Dispatch
 
 GCD相关封装
 
-##4.2 Security
+## 4.2 Security
 
-###4.2.1 Keychain
+### 4.2.1 Keychain
 
 面向对象管理Keychain，支持自定义存储数据。
 
-###4.2.2 Random
+### 4.2.2 Random
 
 快速生成指定位数的随机密码。
 
 ----------
 
-#<a id="Appendix">Appendix
+# <a id="Appendix">Appendix
 
-##Author
+## Author
 
 姓名：阳君
 
@@ -226,7 +225,7 @@ YJ技术支持群：557445088
 
 如果你也想来和我们一起在聚美优品(北京)从事iOS研发工作，欢迎投递简历到937447974@qq.com。
 
-##Revision History
+## Revision History
 
 | 版本 | 时间  | 描述 |
 | ---- | ---- | ---- |
@@ -336,8 +335,14 @@ YJ技术支持群：557445088
 | | 2017-03-13 | Singleton增加单例宏 |
 | | 2017-03-14 | DictionaryModel、Directory、Router、Swizzling、Timer、URLSession、CoreData、Leaks和TimeProfiler库启用Singleton单例宏 |
 | | 2017-03-15 | MemoryInfo上线，主要用于获取运行过程中的RAM相关信息，如剩余内存。|
+| 6.3.0 | 2017-03-28 | URLSession 崩溃修复 |
+| | 2017-03-31 | YJUIScrollViewManager 代理错误设置修复 |
+| | 2017-04-17 | Dispatch 中 __weakSelf 改为 @weakSelf，__strongSelf 改为 @strongSelf。|
+| | 2017-04-19 | CollectionViewManager 和 TableViewManager 移除同步和异步刷新 cell 的方法 |
+| | 2017-04-25 | TimeProfiler 增加页面分析器，控制台打印 VC 加载时间。 |
 
-##Copyright
+
+## Copyright
 
 CSDN：http://blog.csdn.net/y550918116j
 
