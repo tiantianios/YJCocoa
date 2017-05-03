@@ -1,0 +1,27 @@
+PODS:
+  - YJCocoa/AppFrameworks/Foundation/Calendar (6.3.0)
+  - YJCocoa/AppFrameworks/Foundation/Other (6.3.0)
+  - YJCocoa/AppFrameworks/Foundation/PerformSelector (6.3.0)
+  - YJCocoa/AppFrameworks/Foundation/Singleton (6.3.0):
+    - YJCocoa/AppFrameworks/Foundation/Singleton/Core (= 6.3.0)
+  - YJCocoa/AppFrameworks/Foundation/Singleton/Core (6.3.0):
+    - YJCocoa/AppFrameworks/Foundation/Other
+    - YJCocoa/System/Dispatch
+  - YJCocoa/AppFrameworks/Foundation/Timer (6.3.0):
+    - YJCocoa/AppFrameworks/Foundation/Calendar
+    - YJCocoa/AppFrameworks/Foundation/PerformSelector
+    - YJCocoa/AppFrameworks/Foundation/Singleton
+    - YJCocoa/System/Security/Random
+  - YJCocoa/System/Dispatch (6.3.0)
+  - YJCocoa/System/Security/Random (6.3.0)
+
+DEPENDENCIES:
+  - YJCocoa/AppFrameworks/Foundation/Other
+  - YJCocoa/AppFrameworks/Foundation/Timer
+
+SPEC CHECKSUMS:
+  YJCocoa: c44cb2c3d1a9c97f5ee2639dd095af5e73d49354
+
+PODFILE CHECKSUM: 498bb355fe766ccdf323d3cd5c1308da179b17c9
+
+COCOAPODS: 1.1.1
