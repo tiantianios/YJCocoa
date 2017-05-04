@@ -52,6 +52,7 @@
 - (void)run {
     NSAssert(self.timeInterval > 0, @"YJNSTimer.timeInterval小于等于0");
     if (!self.timer || self.timer.timeInterval != self.timeInterval) {
+        [self.timer invalidate];
         self.timer = [NSTimer timerWithTimeInterval:self.timeInterval target:self selector:@selector(autoUpdateTime) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     } else {
