@@ -1,14 +1,14 @@
 PODS:
-  - YJCocoa/System/Dispatch (6.3.0)
-  - YJCocoa/System/Security/Random (6.3.0)
+  - YJCocoa/System/Dispatch (6.4.0)
+  - YJCocoa/System/Security/Random (6.4.0)
 
 DEPENDENCIES:
   - YJCocoa/System/Dispatch
   - YJCocoa/System/Security/Random
 
 SPEC CHECKSUMS:
-  YJCocoa: dc9fa9c1b3bff8f32a36aeb928b6bb369c380b95
+  YJCocoa: 6f035007cb154b26bbbb1f084181d5e163807eb9
 
 PODFILE CHECKSUM: c8a971fe4a4a7f66f3faeed04b736f283f504ef0
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

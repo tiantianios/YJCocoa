@@ -130,13 +130,12 @@ NavigationBar主要实现对UINavigationBar的封装，可快速自定义配置U
 NavigationRouter主要用于实现项目组件化 。
 
 
-### 1.2.7 PageView
+### 1.2.7 PageViewManager
 
-PageView主要实现对轮播图、导航图、小说翻页等多种翻页模式封装。
+PageViewManager 主要实现对 UIPageViewController 的封装，支持轮播图、导航图、小说翻页等多种翻页模式。
 
-1. 支持iOS6.0和Swift开发。
-2. 多种配置模式适应任何多页面需求。
-3. 任何间隔切换VC，内存释放稳定。
+1. 多种配置模式适应任何多页面需求。
+2. 任何间隔切换VC，内存释放稳定。
 
 ### 1.2.8 ScrollViewManager
 
@@ -219,11 +218,11 @@ QQ：937447974
 
 YJ技术支持群：557445088
 
-职位：聚美优品iOS攻城师
+职位：滴滴 iOS 高级工程师
 
 如果你觉得这个框架很赞，请点击右上角的Star按钮；如果你对我的框架感兴趣，并想持续获得本人最新的框架源文件，欢迎点击右上角的Fork按钮。
 
-如果你也想来和我们一起在聚美优品(北京)从事iOS研发工作，欢迎投递简历到937447974@qq.com。
+如果你也想来和我们一起在滴滴从事iOS研发工作，欢迎投递简历到937447974@qq.com。
 
 ## Revision History
 
@@ -340,6 +339,7 @@ YJ技术支持群：557445088
 | | 2017-04-17 | Dispatch 中 __weakSelf 改为 @weakSelf，__strongSelf 改为 @strongSelf。|
 | | 2017-04-19 | CollectionViewManager 和 TableViewManager 移除同步和异步刷新 cell 的方法 |
 | | 2017-04-25 | TimeProfiler 增加页面分析器，控制台打印 VC 加载时间。 |
+| 6.4.0 | 2017-05-04 | PageView 升级为 PageViewManager，主要实现对 UIPageViewController 的封装，支持轮播图、导航图、小说翻页等多种翻页模式。|
 
 
 ## Copyright
